@@ -1,3 +1,4 @@
+//reverse number
 import java.util.Scanner;
 public class p7_reverse_num
 {
