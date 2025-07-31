@@ -7,12 +7,27 @@ public class p6_print_dig
         System.out.print("Enter number:");
         int n = sc.nextInt();
 
-        while(n!=0)
+        //count no.of digits
+        int count = 0;
+        int temp = n;
+        while(temp!=0)
         {
-            int dig=n%10;
-            System.out.println(dig);
-            n/=10;
+            temp/=10;
+            count++;
         }
+
+        //divisor = 10^(count-1);
+        int div = (int)Math.pow(10,count-1);
+
+        //extract digits and print
+        while(div!=0)
+        {
+            int q = n/div;
+            System.out.println(q);
+            n%=div;
+            div/=10;
+        }
+       
     }
     
 }
