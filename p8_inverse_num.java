@@ -17,6 +17,7 @@ public class p8_inverse_num
             n/=10;
         }
         System.out.print(inv);
+        sc.close();
     }
 
     /*

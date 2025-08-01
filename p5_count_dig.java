@@ -20,6 +20,7 @@ public class p5_count_dig
             }
         }
         System.out.println(count);
+        sc.close();
     }
     
 }

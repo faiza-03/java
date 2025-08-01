@@ -27,7 +27,7 @@ public class p6_print_dig
             n%=div;
             div/=10;
         }
-       
+       sc.close();
     }
     
 }
